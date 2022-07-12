@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Loaf
+Exec=env WINEPREFIX="/home/matt/.wine" wine C:\\\\users\\\\matt\\\\Local\\ Settings\\\\Application\\ Data\\\\Programs\\\\Loaf\\\\Loaf.exe 
+Type=Application
+StartupNotify=true
+Comment=Animated icon editor.
+Path=/home/matt/.wine/dosdevices/c:/users/matt/Local Settings/Application Data/Programs/Loaf
+Icon=DD3E_Loaf.0
+StartupWMClass=loaf.exe

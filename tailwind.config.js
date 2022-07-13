@@ -10,7 +10,7 @@ module.exports = {
         'poppins': ['"Poppins"']
       },
       backgroundImage: {
-        'bg-1': "url('../public/japas.png')",
+        'bg-1': "url('../japas.png')",
       }
       
     },

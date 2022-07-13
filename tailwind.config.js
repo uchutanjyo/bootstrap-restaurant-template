@@ -8,7 +8,11 @@ module.exports = {
     extend: {
       fontFamily: {
         'poppins': ['"Poppins"']
+      },
+      backgroundImage: {
+        'bg-1': "url('./japas.png')",
       }
+      
     },
 
   },

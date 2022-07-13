@@ -11,6 +11,7 @@ module.exports = {
       },
       backgroundImage: {
         'bg-1': "url('../japas.png')",
+        'bg-2': "url('../ramen-bg.avif')",
       }
       
     },

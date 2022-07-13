@@ -833,6 +833,10 @@ video {
   width: 3.5rem;
 }
 
+.w-11 {
+  width: 2.75rem;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }

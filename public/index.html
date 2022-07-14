@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth" >
 
   <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
   <body>
     <div class="bg-white shadow-md" x-data="{ isOpen: false }">
       <!-- Navbar -->
-      <nav class=" py-1 mt-0 bg-black mx-auto md:flex md:justify-between w-screen z-20 fixed">
+      <nav class=" py-0 mt-0 bg-black mx-auto md:flex md:justify-between w-screen z-20 fixed">
         <div class="flex items-center justify-between">
        
             <img src="./japas-logo-small.png" width="150px" class="mx-4 animate-fadeindown">
@@ -35,26 +35,26 @@
         <div :class="isOpen ? 'flex' : 'hidden'"
           class="animate-fadeindown flex-col md:flex md:space-y-1 md:flex-row md:items-center  md:space-x-10 md:mt-0 mr-10 text-white">
           <a class="text-white hover:opacity-60"
-            href="#">Home</a>
+           id="nav-1" href="#home">Home</a>
           <a class="text-white hover:opacity-60"
-            href="#">About Us</a>
+          id="nav-2" href="#about">About Us</a>
           <a class="text-white hover:opacity-60"
-            href="#">Our Menu</a>
+          id="nav-3" href="#menu">Our Menu</a>
           <a class="text-white hover:opacity-60"
-            href="#">Gallery</a>
+          id="nav-4" href="#gallery">Gallery</a>
             <a class="text-white hover:opacity-60"
-            href="#">Location</a>
+            id="nav-5"  href="#location">Location</a>
           <div>
           </div>
           <div class="border-2 border-white p-2">
             <a class="text-white hover:opacity-60"
-            href="#">Make a reservation</a></div>
+            id="nav-6" href="#about">Make a reservation</a></div>
         </div>
       </nav>
     </div>
     <!-- Main Hero Content -->
     <div style="background-image: url('https://github.com/uchutanjyo/bootstrap-restaurant-template/blob/main/japas.png?raw=true')"
-      class="relative max-w-lg px-4 mx-auto border text-left bg-center bg-no-repeat bg-cover bg-opacity-40 md:max-w-none  h-[78vh]"
+     id="home" class="relative max-w-lg px-4 mx-auto border text-left bg-center bg-no-repeat bg-cover bg-opacity-40 md:max-w-none  h-[78vh]"
       >
       </h1>
       </div> 
@@ -64,13 +64,13 @@
       </div>
       <div class="animate-fadeinup border-2 border-white p-2">
         <a class=" text-white hover:opacity-60"
-        href="#">Scroll down to see more</a></div>
+        href="#about">Scroll down to see more</a></div>
     </div>
     </div>
     <!-- End Main Hero Content -->
 
     <!-- About section -->
-    <section class="flex flex-col justify-center items-center px-2 py-20 bg-white md:px-0">
+    <section id="about" style="scroll-margin-top: 6em" class="flex flex-col justify-center items-center px-2 py-20 bg-white md:px-0">
       <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
         <div class="flex flex-wrap items-center sm:-mx-3">
           <div class="w-full md:w-1/2 md:px-3">
@@ -83,7 +83,7 @@
               <div class="mt-5 border-2 py-5 flex flex-col items-center">
                 <h2 class="text-3xl font-bold bg-clip-text mt-10">
                   NEED A RESERVATION?</h2>
-                  <h3 class="py-5 text-xl">Give us a call at 416 543 3485.</h3>
+                  <h3 class="py-5 text-xl">Give us a call at (647) 748-8847.</h3>
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@
     </section>
 
     <!-- Menu section -->
-    <div class="flex flex-col items-center justify-center h-[100vh] bg-black">
+    <div id="menu" style="scroll-margin-top: 5em" class="flex flex-col items-center justify-center h-[100vh] bg-gray-800">
     <section style="background-image: url('https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=1000,height=300,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/e9ddffe4-3b75-4b2f-8498-10b42aeb96af.160')"
     class="flex flex-col items-center justify-center text-white h-[90vh] w-[90vw] py-20 bg-black bg-center bg-cover bg-no-repeat bg-opacity-40">
       <div class="">
@@ -167,7 +167,7 @@
 
 
     <!-- Gallery section -->
-    <section class="mt-8 h-[80vh] bg-white">
+    <section id="gallery" style="scroll-margin-top: 12em" class="mt-8 h-[80vh] bg-white">
       <div class="mt-4 text-center">
         <h2 class="text-2xl font-bold"></h3>
         
@@ -214,11 +214,32 @@
             <img class="w-full h-48" src=""
               alt="Image" />
           </div>
+     <!-- Pic 9 -->
+     <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+      <img class="w-full h-48" src=""
+        alt="Image" />
+    </div>
+         <!-- Pic 10 -->
+         <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+          <img class="w-full h-48" src=""
+            alt="Image" />
+        </div>
+             <!-- Pic 11 -->
+             <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+              <img class="w-full h-48" src=""
+                alt="Image" />
+            </div>
+                 <!-- Pic 12 -->
+           <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+            <img class="w-full h-48" src=""
+              alt="Image" />
+          </div>
+
         </div>
       </div>
     </section>
-    <!-- Reservations -->
-    <section class="flex flex-col items-center justify-center h-[70vh] py-10 mt-10  text-white bg-black">
+    <!-- Location -->
+    <section style="scroll-margin-top: 5em" id="location" class="flex flex-col items-center justify-center h-[70vh] py-10 mt-10  text-white bg-black">
       <div class="text-center">
    
       <div class="p-12">
@@ -229,9 +250,6 @@
         <h4></h4>
       </div>
     </div>
-
-
-       
       </div>
     </section>
 
@@ -244,6 +262,7 @@
         <a class="text-white hover:opacity-60"
         href="http://mattengerer.ca">Matt Engerer</a></h1>
         </div>
+        <div class="text-white">For reservations: (647) 748-8847</div>
         <div class="flex justify-center mt-4 lg:mt-0">
           <a href="https://www.ubereats.com/ca/brand-city/toronto-on/japas">
            <img src="./uber-eats.png" class="w-11 mr-5" alt="">

@@ -13,12 +13,11 @@
   <body>
     <div class="bg-white shadow-md" x-data="{ isOpen: false }">
       <!-- Navbar -->
-      <nav class="py-1 mt-0 bg-black mx-auto md:flex md:justify-between w-screen z-20 fixed">
+      <nav class=" py-1 mt-0 bg-black mx-auto md:flex md:justify-between w-screen z-20 fixed">
         <div class="flex items-center justify-between">
-          <a class="text-xl font-bold text-transparent bg-clip-text text-black md:text-2xl hover:text-green-400"
-            href="#">
-            <img src="./japas-logo-small.png" width="150px" class="mx-4">
-          </a>
+       
+            <img src="./japas-logo-small.png" width="150px" class="mx-4 animate-fadeindown">
+  
           <!-- Mobile menu button -->
           <div @click="isOpen = !isOpen" class="flex md:hidden">
             <button type="button" class="text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400"
@@ -34,7 +33,7 @@
 
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <div :class="isOpen ? 'flex' : 'hidden'"
-          class="flex-col md:flex md:space-y-1 md:flex-row md:items-center  md:space-x-10 md:mt-0 mr-10 text-white">
+          class="animate-fadeindown flex-col md:flex md:space-y-1 md:flex-row md:items-center  md:space-x-10 md:mt-0 mr-10 text-white">
           <a class="text-white hover:opacity-60"
             href="#">Home</a>
           <a class="text-white hover:opacity-60"
@@ -54,17 +53,17 @@
       </nav>
     </div>
     <!-- Main Hero Content -->
-    <div  style="background-image: url('https://github.com/uchutanjyo/bootstrap-restaurant-template/blob/main/japas.png?raw=true')"
+    <div style="background-image: url('https://github.com/uchutanjyo/bootstrap-restaurant-template/blob/main/japas.png?raw=true')"
       class="relative max-w-lg px-4 mx-auto border text-left bg-center bg-no-repeat bg-cover bg-opacity-40 md:max-w-none  h-[78vh]"
       >
       </h1>
       </div> 
-     <div class="flex flex-col justify-center items-center bottom:0 w-screen py-10 h-[25vh] mt-0 text-white bg-black mx-auto z-40">
-    <div class="mx-auto font-poppins w-45 h-3/6  text-white lg:text-2xl">
+     <div class=" flex flex-col justify-center items-center bottom:0 w-screen py-10 h-[25vh] mt-0 text-white bg-black mx-auto z-40">
+    <div class="animate-fadeinup mx-auto font-poppins w-45 h-3/6  text-white lg:text-2xl">
         We're a Japanese style Tapas bar located in Toronto's Koreatown. Come by and have a drink and a snack! :)
       </div>
-      <div class="border-2 border-white p-2">
-        <a class="text-white hover:opacity-60"
+      <div class="animate-fadeinup border-2 border-white p-2">
+        <a class=" text-white hover:opacity-60"
         href="#">Scroll down to see more</a></div>
     </div>
     </div>
@@ -224,8 +223,9 @@
    
       <div class="p-12">
         <h2 class="text-3xl font-bold bg-clip-text "> Location</h2>
-        <div class="p-12">
-          <img src="https://b.tile.openstreetmap.org/15/9155/11957.png" alt="">
+        <h3 class="mt-5">You'll find us a block east of Christie station on the northwest corner of Bloor St. and Clinton St.</h3>     
+   <div class="p-12">
+          <img src="./japas-map.png" class="h-96" alt="">
         <h4></h4>
       </div>
     </div>

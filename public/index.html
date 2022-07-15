@@ -20,7 +20,7 @@
   
           <!-- Mobile menu button -->
           <div @click="isOpen = !isOpen" class="flex md:hidden">
-            <button type="button" class="mr-5 text-white hover:text-gray-400 focus:outline-none focus:text-gray-400"
+            <button type="button" class="ml-2 mt-3 text-white hover:text-gray-400 focus:outline-none focus:text-gray-400"
               aria-label="toggle menu">
               <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
                 <path fill-rule="evenodd"
@@ -33,16 +33,16 @@
 
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <div :class="isOpen ? 'flex' : 'hidden'"
-          class="animate-fadeindown flex-col md:flex md:space-y-1 md:flex-row md:items-center  md:space-x-10 md:mt-0 mr-10 text-white">
-          <a class="text-white hover:opacity-60"
+          class="animate-fadeindown flex-col ml-3  lg:ml-0 md:flex md:space-y-1 md:flex-row md:items-center  md:space-x-10 md:mt-0 mr-10 text-white">
+          <a class="mt-1 lg:mt-0 text-white hover:opacity-60"
            id="nav-1" href="#home">Home</a>
-          <a class="text-white hover:opacity-60"
+          <a class="mt-1 lg:mt-0 text-white hover:opacity-60"
           id="nav-2" href="#about">About Us</a>
-          <a class="text-white hover:opacity-60"
+          <a class="mt-1 lg:mt-0 text-white hover:opacity-60"
           id="nav-3" href="#menu">Our Menu</a>
-          <a class="text-white hover:opacity-60"
+          <a class="mt-1 lg:mt-0 text-white hover:opacity-60"
           id="nav-4" href="#gallery">Gallery</a>
-            <a class="text-white hover:opacity-60"
+            <a class="mt-1 lg:mt-0 text-white hover:opacity-60"
             id="nav-5"  href="#location">Location</a>
           <div>
           </div>
@@ -53,8 +53,9 @@
       </nav>
     </div>
     <!-- Main Hero Content -->
-    <div style=" background-image: url('https://github.com/uchutanjyo/bootstrap-restaurant-template/blob/main/japas.png?raw=true')"
-     id="home" class="relative max-w-lg px-4 mx-auto border text-left bg-no-repeat bg-cover lg:bg-cover lg:bg-center bg-opacity-40 h-[100vh]  lg:h-[78vh] md:max-w-none md:h-screen "
+    <div 
+  
+     id="home" class="bg-bg-1 relative max-w-lg px-4 mx-auto border text-left bg-no-repeat bg-cover lg:bg-cover lg:bg-center bg-opacity-40 h-[100vh]  lg:h-[78vh] md:max-w-none md:h-screen "
       >
       
       </div> 
@@ -77,7 +78,7 @@
             <div class="w-full pb-6 space-y-4 sm:max-w-md lg:max-w-lg lg:space-y-4 lg:pr-0 md:pb-0">
               <h1 class="text-4xl text-center">ABOUT US
               </h1>
-              <h2 class="text-2xl py-5 text-black">Japanese-style tapas, sushi, noodles & seasonal oysters served in a simple space until late. Whether you're looking for some late night snacks or ice-cold beer and cocktails, we've got you covered. </h2>
+              <h2 class="text-2xl py-5 px-3 text-black">Japanese-style tapas, sushi, noodles & seasonal oysters served in a simple space until late. Whether you're looking for some late night snacks or ice-cold beer and cocktails, we've got you covered. </h2>
               <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">
               </p>
               <div class="mt-5 border-2 py-5 flex flex-col items-center">
@@ -122,7 +123,7 @@
       <div class="flex flex-col lg:flex-row ">
         <img class="flex mt-2 h-48 lg:h-80 mr-0 lg:mr-28 rounded-lg shadow-lg" src="./food.jpeg" alt="">
         <!-- Drink/Food menus (top) -->
-        <div class="flex flex-col lg:mr-28 mt-10">
+        <div class="flex flex-col lg:mr-28 mt-10 px-2">
 
         <h1 class="text-4xl border-2 py-0 lg:py-5 px-3 flex flex-col items-center">
       <a class="hover:opacity-60" href="https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account20151500/29071643_1.pdf?0.21693338524296146">
@@ -291,3 +292,5 @@
 </html>
 
 <!-- https://www.doordash.com/en-CA/store/japas-toronto-850526/ -->
+
+<!-- style="background-image: url('https://github.com/uchutanjyo/bootstrap-restaurant-template/blob/main/japas.png?raw=true')" -->

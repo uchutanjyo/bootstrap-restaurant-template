@@ -13,14 +13,14 @@
   <body>
     <div class="bg-white shadow-md" x-data="{ isOpen: false }">
       <!-- Navbar -->
-      <nav class=" py-0 mt-0 bg-black mx-auto md:flex md:justify-between w-screen z-20 fixed">
+      <nav class="hidden py-0 mt-0 bg-black mx-auto md:flex md:justify-between w-screen z-20 fixed">
         <div class="flex items-center justify-between">
        
             <img src="./japas-logo-small.png" width="150px" class="mx-4 animate-fadeindown">
   
           <!-- Mobile menu button -->
           <div @click="isOpen = !isOpen" class="flex md:hidden">
-            <button type="button" class="ml-2 mt-3 text-white hover:text-gray-400 focus:outline-none focus:text-gray-400"
+            <button type="button" class="ml-3 mt-3 text-white hover:text-gray-400 focus:outline-none focus:text-gray-400"
               aria-label="toggle menu">
               <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
                 <path fill-rule="evenodd"
@@ -33,7 +33,7 @@
 
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <div :class="isOpen ? 'flex' : 'hidden'"
-          class="animate-fadeindown flex-col ml-3  lg:ml-0 md:flex md:space-y-1 md:flex-row md:items-center  md:space-x-10 md:mt-0 mr-10 text-white">
+          class="animate-fadeindown flex-col ml-3 mb-2 lg:mb-0 lg:ml-0 md:flex md:space-y-1 md:flex-row md:items-center  md:space-x-10 md:mt-0 mr-10 text-white">
           <a class="mt-1 lg:mt-0 text-white hover:opacity-60"
            id="nav-1" href="#home">Home</a>
           <a class="mt-1 lg:mt-0 text-white hover:opacity-60"
@@ -54,8 +54,7 @@
     </div>
     <!-- Main Hero Content -->
     <div 
-  
-     id="home" class="bg-bg-1 relative max-w-lg px-4 mx-auto border text-left bg-no-repeat bg-cover lg:bg-cover lg:bg-center bg-opacity-40 h-[100vh]  lg:h-[78vh] md:max-w-none md:h-screen "
+     id="home" class="bg-bg-small md:bg-1 lg:bg-bg-1 relative max-w-lg px-4 mx-auto border text-left bg-no-repeat bg-center lg:bg-cover lg:bg-center bg-opacity-40 h-[100vh]  lg:h-[78vh] md:max-w-none md:h-screen "
       >
       
       </div> 
@@ -109,17 +108,13 @@
           <h3>1:00am</h3>
           <h2 class="text-xl font-bold mt-4">Last call for drinks:</h2>
             <h3>1:30am</h3>
-            
         </div>
-
-       
       </div>
     </section>
-<!--     
-    <div id="menu" ; scroll-margin-top: 5em" class="flex flex-col items-center justify-center lg:h-[100vh] lg:py-0 lg:bg-cover lg:bg-center lg:bg-no-repeat z-10"> -->
+
     <!-- Menu section -->
     <section id="menu" style="scroll-margin-top: 5em"
-    class="rounded flex flex-col items-center justify-center text-white h-[120vh] lg:[90vh] bg-gray-700 pt-0 lg:pt-10">
+    class="rounded flex flex-col items-center justify-center text-white h-[120vh] lg:h-[88vh] bg-gray-700 pt-0 lg:pt-10">
       <div class="flex flex-col lg:flex-row ">
         <img class="flex mt-2 h-48 lg:h-80 mr-0 lg:mr-28 rounded-lg shadow-lg" src="./food.jpeg" alt="">
         <!-- Drink/Food menus (top) -->
@@ -142,7 +137,6 @@
       <div class="text-black container mt-0 lg:mt-12 py-0 lg:py-10 h-[100vh] lg:h-[30vh] items-center max-w-6xl px-1 pb-1 lg:px-8 mx-auto xl:px-5 bg-gray-700">
         <div class="flex flex-wrap items-center">
           <div class="w-full md:w-1/2 md:px-3">
-            <div class=""></div>
             <div  class="p-3 lg:p-6 flex justify-center items-center h-40 sm:max-w-md lg:max-w-lg lg:space-y-4 lg:px-1 md:pb-0 bg-white bg-opacity-20">
               <h1 class="text-xl">
                <b>For takeout</b>, call: 416 344 2348 (pickup, not delivery).

@@ -10,8 +10,8 @@ module.exports = {
         'poppins': ['"Poppins"']
       },
       backgroundImage: {
-        'bg-1': "url('../japas.png')",
-        'bg-2': "url('../ramen-bg.avif')",
+        'bg-1': "url('./japas.png')",
+        'bg-small': "url('./japas-small.png')",
       },
       keyframes: {
         // 'wiggle': {

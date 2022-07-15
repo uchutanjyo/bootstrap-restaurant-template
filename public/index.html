@@ -7,20 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japas | Japanese Tapas Bar</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./japas-logo-small.png" />
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
 
   <body>
     <div class="bg-white shadow-md" x-data="{ isOpen: false }">
       <!-- Navbar -->
-      <nav class="hidden py-0 mt-0 bg-black mx-auto md:flex md:justify-between w-screen z-20 fixed">
+      <nav class=" py-0 mt-0 bg-black mx-auto md:flex md:justify-between w-screen z-20 fixed">
         <div class="flex items-center justify-between">
        
             <img src="./japas-logo-small.png" width="150px" class="mx-4 animate-fadeindown">
   
           <!-- Mobile menu button -->
           <div @click="isOpen = !isOpen" class="flex md:hidden">
-            <button type="button" class="ml-3 mt-3 text-white hover:text-gray-400 focus:outline-none focus:text-gray-400"
+            <button type="button" class="mr-3 lg:mr-0 mt-3 text-white hover:text-gray-400 focus:outline-none focus:text-gray-400"
               aria-label="toggle menu">
               <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
                 <path fill-rule="evenodd"
@@ -54,12 +55,12 @@
     </div>
     <!-- Main Hero Content -->
     <div 
-     id="home" class="bg-bg-small md:bg-1 lg:bg-bg-1 relative max-w-lg px-4 mx-auto border text-left bg-no-repeat bg-center lg:bg-cover lg:bg-center bg-opacity-40 h-[100vh]  lg:h-[78vh] md:max-w-none md:h-screen "
+     id="home" class="bg-bg-small md:bg-1 lg:bg-bg-1 relative max-w-lg px-4 mx-auto border text-left bg-no-repeat bg-center lg:bg-cover lg:bg-center bg-opacity-40 h-[80vh]  lg:h-[78vh] md:max-w-none md:h-screen "
       >
       
       </div> 
      <div class="flex flex-col justify-center items-center bottom:0 w-screen py-10 h-[25vh] mt-0  bg-black mx-auto z-40 ">
-    <div class="animate-fadeinup mx-auto font-poppins w-45 h-3/6 px-5  text-white mb-12 lg:mb-0 lg:py-0 lg:text-2xl">
+    <div class="animate-fadeinup mx-auto font-poppins w-45 h-3/6 lg:h-auto px-5  text-white mb-12 lg:mb-0 lg:py-0 lg:text-2xl">
         We're a Japanese style Tapas bar located in Toronto's Koreatown. Come by and have a drink and a snack! :)
       </div>
       <div class="animate-fadeinup border-2 border-white p-2 hidden">
@@ -261,9 +262,9 @@
     <footer class="bg-gray-800 border-t border-gray-200">
       <div class="container flex flex-wrap items-center justify-center px-4 py-8 mx-auto lg:justify-between">
         <div class="flex flex-wrap justify-center">
-       <h1 class="text-white">© 2022 
+       <h1 class="text-white">Website built by 
         <a class="text-white hover:opacity-60"
-        href="http://mattengerer.ca">Matt Engerer</a></h1>
+        href="http://mattengerer.ca">Matt Engerer</a> © 2022 </h1>
         </div>
         <div class="text-white">For reservations: (647) 748-8847</div>
         <div class="flex justify-center mt-4 lg:mt-0">

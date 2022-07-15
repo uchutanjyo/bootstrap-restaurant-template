@@ -824,6 +824,14 @@ video {
   height: 124vh;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-\[130vh\] {
+  height: 130vh;
+}
+
 .w-screen {
   width: 100vw;
 }

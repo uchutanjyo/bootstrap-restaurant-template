@@ -820,6 +820,10 @@ video {
   height: 90vh;
 }
 
+.h-\[124vh\] {
+  height: 124vh;
+}
+
 .w-screen {
   width: 100vw;
 }

@@ -20,7 +20,7 @@
   
           <!-- Mobile menu button -->
           <div @click="isOpen = !isOpen" class="flex md:hidden">
-            <button type="button" class="text-white hover:text-gray-400 focus:outline-none focus:text-gray-400"
+            <button type="button" class="mr-5 text-white hover:text-gray-400 focus:outline-none focus:text-gray-400"
               aria-label="toggle menu">
               <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
                 <path fill-rule="evenodd"
@@ -54,12 +54,12 @@
     </div>
     <!-- Main Hero Content -->
     <div style=" background-image: url('https://github.com/uchutanjyo/bootstrap-restaurant-template/blob/main/japas.png?raw=true')"
-     id="home" class="relative max-w-lg px-4 mx-auto border text-left bg-center bg-no-repeat bg-center lg:bg-cover bg-opacity-40 h-[78vh] md:max-w-none md:h-screen "
+     id="home" class="relative max-w-lg px-4 mx-auto border text-left bg-no-repeat bg-cover lg:bg-cover lg:bg-center bg-opacity-40 h-[100vh]  lg:h-[78vh] md:max-w-none md:h-screen "
       >
       
       </div> 
      <div class=" flex flex-col justify-center items-center bottom:0 w-screen py-10 h-[25vh] mt-0 text-white bg-black mx-auto z-40">
-    <div class="animate-fadeinup mx-auto font-poppins w-45 h-3/6  text-white py-10 lg:py-0 lg:text-2xl">
+    <div class="animate-fadeinup mx-auto font-poppins w-45 h-3/6 px-5  text-white mb-20 lg:mb-0 lg:py-0 lg:text-2xl">
         We're a Japanese style Tapas bar located in Toronto's Koreatown. Come by and have a drink and a snack! :)
       </div>
       <div class="animate-fadeinup border-2 border-white p-2 hidden">
@@ -71,7 +71,7 @@
 
     <!-- About section -->
     <section id="about" style="scroll-margin-top: 6em" class="flex flex-col justify-center items-center px-2 py-20 bg-white md:px-0">
-      <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
+      <div class="container items-center max-w-6xl lg:px-8 mx-auto xl:px-5">
         <div class="flex flex-wrap items-center sm:-mx-3">
           <div class="w-full md:w-1/2 md:px-3">
             <div class="w-full pb-6 space-y-4 sm:max-w-md lg:max-w-lg lg:space-y-4 lg:pr-0 md:pb-0">
@@ -116,24 +116,24 @@
     </section>
 
     <!-- Menu section -->
-    <div id="menu" style="scroll-margin-top: 5em" class="flex flex-col items-center justify-center h-[100vh] bg-gray-700">
+    <div id="menu" style="scroll-margin-top: 5em" class="flex flex-col items-center justify-center h-[120vh] lg:h-[100vh] bg-gray-700">
     <section style="background-image: url('https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=1000,height=300,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/e9ddffe4-3b75-4b2f-8498-10b42aeb96af.160')"
     class="rounded flex flex-col items-center justify-center text-white h-[90vh] w-[90vw] py-20 bg-black bg-center bg-cover bg-no-repeat z-10">
       <div class="">
         <!-- Drink/Food menus (top) -->
-        <h1 class="text-4xl border-2 py-5 px-3 flex flex-col items-center">
+        <h1 class="text-4xl border-2 py-0 lg:py-5 px-3 flex flex-col items-center">
       <a class="hover:opacity-60" href="https://qrcgcustomers.s3-eu-west-1.amazonaws.com/account20151500/29071643_1.pdf?0.21693338524296146">
           FOOD MENU
          </a>
         </h1>
-        <h1 class="text-4xl mt-5 border-2 py-5 flex flex-col items-center">
+        <h1 class="text-4xl mt-5 border-2 py-0 lg:py-5  flex flex-col items-center">
           <a class=" hover:opacity-60" href="">
               DRINK MENU
              </a>
             </h1>
       </div>
       <!-- Takeout (left) -->
-      <div class="text-black container mt-12 py-10 items-center max-w-6xl px-8 mx-auto xl:px-5">
+      <div class="text-black container mt-12 py-0 lg:py-10  items-center max-w-6xl px-8 mx-auto xl:px-5">
         <div class="flex flex-wrap items-center sm:-mx-3">
           <div class="w-full md:w-1/2 md:px-3">
             <div class="p-6 flex justify-center items-center h-40 sm:max-w-md lg:max-w-lg lg:space-y-4 lg:pr-0 md:pb-0 bg-white bg-opacity-20">

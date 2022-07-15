@@ -807,6 +807,10 @@ video {
   height: 30vh;
 }
 
+.h-\[90vh\] {
+  height: 90vh;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -989,6 +993,18 @@ video {
   --tw-bg-opacity: 0.2;
 }
 
+.bg-opacity-60 {
+  --tw-bg-opacity: 0.6;
+}
+
+.bg-opacity-80 {
+  --tw-bg-opacity: 0.8;
+}
+
+.bg-opacity-10 {
+  --tw-bg-opacity: 0.1;
+}
+
 .bg-bg-small {
   background-image: url('./japas-small.png');
 }
@@ -1086,6 +1102,16 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -1153,6 +1179,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .text-white {
@@ -1313,6 +1343,14 @@ video {
 
   .lg\:mr-0 {
     margin-right: 0px;
+  }
+
+  .lg\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
   }
 
   .lg\:flex {

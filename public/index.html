@@ -14,10 +14,10 @@
   <body>
     <div class="bg-white shadow-md" x-data="{ isOpen: false }">
       <!-- Navbar -->
-      <nav class=" py-0 mt-0 bg-black mx-auto md:flex md:justify-between w-screen z-20 fixed">
+      <nav class="py-0 mt-0 bg-black mx-auto md:flex md:justify-between w-screen z-20 fixed">
         <div class="flex items-center justify-between">
        
-            <img src="./japas-logo-small.png" width="150px" class="mx-4 animate-fadeindown">
+            <img src="./japas-logo-small.png"  class="w-1/4 lg:w-1/12 mx-4 animate-fadeindown">
   
           <!-- Mobile menu button -->
           <div @click="isOpen = !isOpen" class="flex md:hidden">
@@ -35,32 +35,32 @@
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <div :class="isOpen ? 'flex' : 'hidden'"
           class="animate-fadeindown flex-col ml-3 mb-2 lg:mb-0 lg:ml-0 md:flex md:space-y-1 md:flex-row md:items-center  md:space-x-10 md:mt-0 mr-10 text-white">
-          <a class="mt-1 lg:mt-0 text-white hover:opacity-60"
+          <a @click="isOpen = !isOpen" class="mt-1 lg:mt-0 text-white hover:opacity-60"
            id="nav-1" href="#home">Home</a>
-          <a class="mt-1 lg:mt-0 text-white hover:opacity-60"
+          <a @click="isOpen = !isOpen" class="mt-1 lg:mt-0 text-white hover:opacity-60"
           id="nav-2" href="#about">About Us</a>
-          <a class="mt-1 lg:mt-0 text-white hover:opacity-60"
+          <a @click="isOpen = !isOpen" class="mt-1 lg:mt-0 text-white hover:opacity-60"
           id="nav-3" href="#menu">Our Menu</a>
-          <a class="mt-1 lg:mt-0 text-white hover:opacity-60"
+          <a @click="isOpen = !isOpen" class="mt-1 lg:mt-0 text-white hover:opacity-60"
           id="nav-4" href="#gallery">Gallery</a>
-            <a class="mt-1 lg:mt-0 text-white hover:opacity-60"
+            <a @click="isOpen = !isOpen" class="mt-1 lg:mt-0 text-white hover:opacity-60"
             id="nav-5"  href="#location">Location</a>
           <div>
           </div>
-          <div class="hidden md:flex lg:flex border-2 border-white p-2">
-            <a class="text-white hover:opacity-60"
+          <div class="hidden md:flex lg:flex border-2 px-2 border-white p-2">
+            <a @click="isOpen = !isOpen" class="text-white hover:opacity-60"
             id="nav-6" href="#about">Make a reservation</a></div>
         </div>
       </nav>
     </div>
     <!-- Main Hero Content -->
     <div 
-     id="home" class="bg-bg-small md:bg-1 lg:bg-bg-1 relative max-w-lg px-4 mx-auto border text-left bg-no-repeat bg-cover bg-cover lg:bg-center bg-opacity-40 h-[80vh]  lg:h-[78vh] md:max-w-none md:h-screen"
+     id="home" class="bg-bg-small md:bg-1 lg:bg-bg-1 relative max-w-lg px-4 mx-auto border text-left bg-no-repeat bg-cover bg-cover lg:bg-center bg-opacity-40 h-[86vh]  lg:h-[88vh] md:max-w-none md:h-screen"
       >
       
       </div> 
-     <div class="flex flex-col justify-center items-center bottom:0 w-screen py-10 h-[25vh] mt-0  bg-black mx-auto z-40 ">
-    <div class="animate-fadeinup mx-auto font-poppins w-45 h-3/6 lg:h-auto px-5  text-white mb-12 lg:mb-0 lg:py-0 lg:text-2xl">
+     <div class="flex flex-col justify-center items-center bottom:0 w-screen py-10 h-[15vh] mt-0  bg-black mx-auto z-40 ">
+    <div class="animate-fadeinup mx-auto font-poppins w-45 h-3/6 lg:h-auto px-5  text-white mb-12 pb-5 lg:mb-0 lg:py-0 lg:text-2xl">
         We're a Japanese style Tapas bar located in Toronto's Koreatown. Come by and have a drink and a snack! :)
       </div>
       <div class="animate-fadeinup border-2 border-white p-2 hidden">
@@ -144,7 +144,7 @@ Drink Menu             </a>
           </div>
           <!-- Order online (right) -->
           <div class="p-6 flex flex-col lg:flex-row justify-center items-center  h-40 md:w-1/2 bg-white bg-opacity-10 rounded">
-            <div class="w-full h-auto overflow-hidden">
+            <div class="w-full">
               <h1 class="text-xl mr-8 text-center">
                 Order online with Uber Eats or DoorDash.
               </h1>

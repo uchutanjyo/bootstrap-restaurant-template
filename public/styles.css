@@ -1298,6 +1298,10 @@ video {
     max-width: 28rem;
   }
 
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
   .sm\:rounded-xl {
     border-radius: 0.75rem;
   }
@@ -1450,6 +1454,10 @@ video {
     height: 24rem;
   }
 
+  .lg\:h-\[92vh\] {
+    height: 92vh;
+  }
+
   .lg\:w-96 {
     width: 24rem;
   }
@@ -1484,6 +1492,10 @@ video {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
   }
 
   .lg\:justify-between {
@@ -1547,6 +1559,14 @@ video {
 
   .lg\:pb-1 {
     padding-bottom: 0.25rem;
+  }
+
+  .lg\:pt-36 {
+    padding-top: 9rem;
+  }
+
+  .lg\:pt-28 {
+    padding-top: 7rem;
   }
 
   .lg\:text-2xl {

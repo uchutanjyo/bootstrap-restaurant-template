@@ -41,14 +41,23 @@ module.exports = {
       opacity: '1',
       transform: 'translateY(0)'
   }
+    },
+
+    'fadein': {
+  
+      '0%': {
+        opacity: '0'
+    },
+    '100%': {
+        opacity: '1'
     }
-
-
+      }
 
       },
       animation: {
         'fadeindown': 'fadeindown 0.5s ease-out',
-        'fadeinup': 'fadeindown 0.6s ease-out'
+        'fadeinup': 'fadeindown 0.6s ease-out',
+        'fadein': 'fadein 0.7s ease-out'
     }
     }, 
   },
